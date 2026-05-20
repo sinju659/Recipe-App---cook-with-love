@@ -7,7 +7,7 @@ function Banner() {
       <div className="max-w-7xl mx-auto px-6 lg:px-5 pt-12 lg:pt-20 pb-10 lg:pb-20">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <div className="lg:col-span-6 relative reveal">
-            <h1 className="font-body font-light text-6xl md:text-7xl lg:text-[88px] leading-[0.95] tracking-tight">
+            <h1 className="font-body font-light text-5xl md:text-7xl lg:text-[88px] leading-[0.95] tracking-tight">
               Discover Joy in <br />
               Every
               <em className="font-body italic font-medium text-terracotta text-[var(--primary-color)]">
