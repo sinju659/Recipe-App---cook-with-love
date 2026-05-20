@@ -1,4 +1,4 @@
-# recipe web application - Cook with Love
+# Recipe web application - Cook with Love
 
 A modern and responsive recipe web application built with React JS.  
 Discover delicious recipes, search meals instantly, explore categories, and save your favorite dishes with ease.
