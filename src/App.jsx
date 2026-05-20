@@ -7,8 +7,16 @@ import Recipes from "./Recipes";
 import Blogs from "./Blogs";
 import Contactus from "./Contactus";
 import Innerrecipes from "./Innerrecipes";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <BrowserRouter>
       <Header />

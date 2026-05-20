@@ -7,14 +7,20 @@ function Banner() {
       <div className="max-w-7xl mx-auto px-6 lg:px-5 pt-12 lg:pt-20 pb-10 lg:pb-20">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <div className="lg:col-span-6 relative reveal">
-            <h1 className="font-body font-light text-5xl md:text-7xl lg:text-[88px] leading-[0.95] tracking-tight">
+            <h1
+              className="font-body font-light text-5xl md:text-7xl lg:text-[88px] leading-[0.95] tracking-tight"
+              data-aos="fade-down"
+            >
               Discover Joy in <br />
               Every
               <em className="font-body italic font-medium text-terracotta text-[var(--primary-color)]">
                 Recipe.
               </em>
             </h1>
-            <p className="mt-8 text-lg text-ink-soft max-w-lg leading-relaxed">
+            <p
+              className="mt-8 text-lg text-ink-soft max-w-lg leading-relaxed"
+              data-aos="fade-up"
+            >
               Explore thousands of delicious recipes, cook with love and share
               the joy of cooking with your Loved ones.
             </p>
@@ -63,7 +69,10 @@ function Banner() {
           </div>
 
           <div className="lg:col-span-6 relative">
-            <div className="img-frame relative aspect-[4/5] overflow-hidden rounded-sm">
+            <div
+              className="img-frame relative aspect-[4/5] overflow-hidden rounded-sm"
+              data-aos="fade-in"
+            >
               <img
                 src={BannerImage}
                 alt="Featured dish"

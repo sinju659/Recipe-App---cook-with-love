@@ -1,5 +1,5 @@
 import logoImg from "./assets/logo.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 import { Link } from "react-router";
 import twitterIcon from "./assets/twitter.png";

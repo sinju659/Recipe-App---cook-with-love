@@ -10,7 +10,10 @@ function Ourstory() {
     <main className="font-sans bg-[var(--secondary-color)]/20">
       <section className="relative w-full py-10 pt-15">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-[var(--primary-color)] text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] font-extrabold leading-tight max-w-4xl mx-auto">
+          <h2
+            className="text-[var(--primary-color)] text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] font-extrabold leading-tight max-w-4xl mx-auto"
+            data-aos="zoom-in"
+          >
             Our Story
           </h2>
 

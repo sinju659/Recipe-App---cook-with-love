@@ -59,7 +59,10 @@ function Innerrecipes() {
               {recipe.strCategory}
             </span>
 
-            <h1 className="text-5xl font-bold text-gray-900 mt-5">
+            <h1
+              className="text-5xl font-bold text-gray-900 mt-5"
+              data-aos="fade-up"
+            >
               {recipe.strMeal}
             </h1>
 

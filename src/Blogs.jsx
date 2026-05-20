@@ -19,7 +19,10 @@ function Blogs() {
                 Food Blog
               </span>
 
-              <h2 className="text-3xl lg:text-4xl font-bold text-black leading-tight mb-5">
+              <h2
+                className="text-3xl lg:text-4xl font-bold text-black leading-tight mb-5"
+                data-aos="zoom-in"
+              >
                 Delicious Homemade Recipes For Every Occasion
               </h2>
 

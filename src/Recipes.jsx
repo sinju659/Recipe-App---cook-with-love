@@ -44,7 +44,10 @@ function Recipes() {
               Our Recipes
             </span>
 
-            <h2 className="text-4xl font-bold text-[var(--primary-color)] mt-3">
+            <h2
+              className="text-4xl font-bold text-[var(--primary-color)] mt-3"
+              data-aos="zoom-in"
+            >
               Delicious Recipes Made With Love
             </h2>
 
