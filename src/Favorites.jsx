@@ -82,7 +82,7 @@ function Favorites() {
                   <div className="mt-5 flex items-center justify-between">
                     <Link
                       to={`/recipe/${recipe.idMeal}`}
-                      className="inline-block mt-8 bg-[var(--primary-color)] text-white px-8 py-4 rounded-2xl"
+                      className="inline-block mt-1 bg-[var(--primary-color)] text-white px-8 py-4 rounded-2xl"
                     >
                       View Recipe
                     </Link>
