@@ -10,6 +10,7 @@ import Innerrecipes from "./Innerrecipes";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Favorites from "./Favorites";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/innerrecipes/:id" element={<Innerrecipes />} />
+        <Route path="/favorites" element={<Favorites />} />
       </Routes>
     </BrowserRouter>
   );

@@ -6,6 +6,9 @@ function Recipes() {
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
+  const [favorites, setFavorites] = useState(
+    JSON.parse(localStorage.getItem("favorites")) || [],
+  );
 
   const navigate = useNavigate();
 
@@ -34,6 +37,23 @@ function Recipes() {
 
     return matchesSearch && matchesCategory;
   });
+
+  const addfavorite = (recipe) => {
+    const isAlreadyFavorite = favorites.some(
+      (fav) => fav.idMeal === recipe.idMeal,
+    );
+
+    let updatedFavorites;
+    if (isAlreadyFavorite) {
+      updatedFavorites = favorites.filter(
+        (fav) => fav.idMeal !== recipe.idMeal,
+      );
+    } else {
+      updatedFavorites = [...favorites, recipe];
+    }
+    setFavorites(updatedFavorites);
+    localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+  };
 
   return (
     <main>
@@ -118,18 +138,57 @@ function Recipes() {
                     </h3>
 
                     <div className="flex items-center justify-between mt-6">
-                      <span className="text-sm text-black-500">
+                      <span className="text-sm text-gray-600">
                         ⏱ {recipe.strTags?.split(",").length || 0} mins
                       </span>
 
-                      <button
-                        onClick={() =>
-                          navigate(`/innerrecipes/${recipe.idMeal}`)
-                        }
-                        className="bg-[var(--primary-color)] cursor-pointer hover:bg-[#630e20] text-white px-5 py-2 rounded-xl transition"
-                      >
-                        View Recipe
-                      </button>
+                      <div className="flex items-center gap-3">
+                        <button
+                          onClick={() => addfavorite(recipe)}
+                          className="text-3xl hover:scale-110 transition duration-300"
+                        >
+                          {favorites.some(
+                            (fav) => fav.idMeal === recipe.idMeal,
+                          ) ? (
+                            <span className="text-red-500">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                className="w-6 h-6"
+                              >
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                              </svg>
+                            </span>
+                          ) : (
+                            <span className="text-gray-300 hover:text-red-400">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth={2}
+                                className="w-6 h-6"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                                />
+                              </svg>
+                            </span>
+                          )}
+                        </button>
+
+                        <button
+                          onClick={() =>
+                            navigate(`/innerrecipes/${recipe.idMeal}`)
+                          }
+                          className="bg-[var(--primary-color)] hover:bg-[#630e20] text-white px-5 py-2 rounded-xl transition duration-300 shadow-md"
+                        >
+                          View Recipe
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>

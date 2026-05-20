@@ -7,6 +7,7 @@ import facebookIcon from "./assets/facebook.png";
 import youtubeIcon from "./assets/youtube.png";
 import snapIcon from "./assets/snap.png";
 import phoneIcon from "./assets/phone.png";
+import favoriteicon from "./assets/favorite.png";
 
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -53,6 +54,19 @@ function Header() {
               className="relative pb-1 hover:text-[var(--primary-color)] transition-colors after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-[var(--primary-color)] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
             >
               Contact Us
+            </Link>
+            <Link
+              to="/favorites"
+              className="relative pb-1 hover:text-[var(--primary-color)] transition-colors after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-[var(--primary-color)] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="red"
+                className="w-6 h-6"
+              >
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
             </Link>
           </nav>
 
@@ -126,21 +140,21 @@ function Header() {
             <Link
               to="/"
               onClick={() => setOpenMenu(false)}
-              className="text-[#1F1A14] font-medium hover:text-[#C2552D] transition"
+              className="text-[#1F1A14] font-medium hover:text-[var(--primary-color)] transition"
             >
               Home
             </Link>
             <Link
               to="/ourstory"
               onClick={() => setOpenMenu(false)}
-              className="text-[#1F1A14] font-medium hover:text-[#C2552D] transition"
+              className="text-[#1F1A14] font-medium hover:text-[var(--primary-color)] transition"
             >
               Our Story
             </Link>
             <Link
               to="/recipes"
               onClick={() => setOpenMenu(false)}
-              className="text-[#1F1A14] font-medium hover:text-[#C2552D] transition"
+              className="text-[#1F1A14] font-medium hover:text-[var(--primary-color)] transition"
             >
               Recipes
             </Link>
@@ -148,16 +162,30 @@ function Header() {
             <Link
               to="/blogs"
               onClick={() => setOpenMenu(false)}
-              className="text-[#1F1A14] font-medium hover:text-[#C2552D] transition"
+              className="text-[#1F1A14] font-medium hover:text-[var(--primary-color)] transition"
             >
               Blogs
             </Link>
             <Link
               to="/contactus"
               onClick={() => setOpenMenu(false)}
-              className="text-[#1F1A14] font-medium hover:text-[#C2552D] transition"
+              className="text-[#1F1A14] font-medium hover:text-[var(--primary-color)] transition"
             >
               Contact Us
+            </Link>
+            <Link
+              to="/favorites"
+              onClick={() => setOpenMenu(false)}
+              className="text-[#1F1A14] font-medium hover:text-[var(--primary-color)] transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="red"
+                className="w-6 h-6"
+              >
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
             </Link>
           </nav>
         </div>

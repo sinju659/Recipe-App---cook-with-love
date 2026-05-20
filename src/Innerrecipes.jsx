@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function Innerrecipes() {
   const { id } = useParams();
@@ -26,8 +26,7 @@ function Innerrecipes() {
       </h1>
     );
   }
-
-  // Ingredients Array
+  //Array -
   const ingredients = [];
 
   for (let i = 1; i <= 20; i++) {
@@ -125,12 +124,12 @@ function Innerrecipes() {
             </ol>
           </div>
         </div>
-        <a
-          href="/"
+        <Link
+          to="/"
           className="inline-block mt-8 bg-[var(--primary-color)] text-white px-8 py-4 rounded-2xl"
         >
           Back to Home
-        </a>
+        </Link>
       </div>
     </main>
   );
