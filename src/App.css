@@ -1,0 +1,85 @@
+/* Banner Section - Banner.jsx */
+.feature-card {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease;
+}
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px -10px rgba(194, 85, 45, 0.18);
+}
+.icon-circle {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.feature-card:hover .icon-circle {
+  transform: scale(1.06);
+}
+
+/* Our Story Section - Ourstory.jsx */
+.text-outline-white {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #ffffff;
+}
+.snap-x-mandatory {
+  scroll-snap-type: x mandatory;
+}
+.snap-card {
+  scroll-snap-align: start;
+}
+.chip {
+  background: #ffffff;
+  border-radius: 9999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #374151;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+.chip .dot {
+  width: 18px;
+  height: 18px;
+  background: #111827;
+  color: #fff;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+.ring-stack {
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  width: 220px;
+  height: 220px;
+  border-radius: 9999px;
+  background:
+    radial-gradient(circle, #8b5cf6 0 28px, transparent 29px),
+    radial-gradient(
+      circle,
+      transparent 0 44px,
+      #8b5cf6 45px 60px,
+      transparent 61px
+    ),
+    radial-gradient(
+      circle,
+      transparent 0 76px,
+      #8b5cf6 77px 92px,
+      transparent 93px
+    );
+}
+
+.img-card img {
+  transition: transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.img-card:hover img {
+  transform: scale(1.06);
+}
+
+.eyebrow {
+  letter-spacing: 0.22em;
+}
