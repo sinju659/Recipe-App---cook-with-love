@@ -125,30 +125,36 @@ function Header() {
           <nav className="flex flex-col gap-4">
             <Link
               to="/"
+              onClick={() => setOpenMenu(false)}
               className="text-[#1F1A14] font-medium hover:text-[#C2552D] transition"
             >
               Home
             </Link>
             <Link
               to="/ourstory"
+              onClick={() => setOpenMenu(false)}
               className="text-[#1F1A14] font-medium hover:text-[#C2552D] transition"
             >
               Our Story
             </Link>
             <Link
               to="/recipes"
+              onClick={() => setOpenMenu(false)}
               className="text-[#1F1A14] font-medium hover:text-[#C2552D] transition"
             >
               Recipes
             </Link>
+
             <Link
               to="/blogs"
+              onClick={() => setOpenMenu(false)}
               className="text-[#1F1A14] font-medium hover:text-[#C2552D] transition"
             >
               Blogs
             </Link>
             <Link
               to="/contactus"
+              onClick={() => setOpenMenu(false)}
               className="text-[#1F1A14] font-medium hover:text-[#C2552D] transition"
             >
               Contact Us
