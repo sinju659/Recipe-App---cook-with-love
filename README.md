@@ -1,16 +1,66 @@
-# React + Vite
+# recipe web application - Cook with Love
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive recipe web application built with React JS.  
+Discover delicious recipes, search meals instantly, explore categories, and save your favorite dishes with ease.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Search recipes by meal name or category
+- Filter recipes by categories
+- Add & remove favorite recipes
+- Favorites stored using LocalStorage
+- Fully responsive design
+- Fast and smooth user experience
+- Beautiful modern UI with animations
+- View complete recipe details
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React JS
+- React Router DOM
+- Axios
+- Tailwind CSS
+- AOS Animation Library
+
+---
+
+## 📚 React Concepts Used
+
+- ✅ useState
+- ✅ useEffect
+- ✅ API Fetching
+- ✅ Axios
+- ✅ Array map()
+- ✅ Array filter()
+- ✅ Array some()
+- ✅ LocalStorage
+- ✅ Conditional Rendering
+- ✅ Event Handling
+- ✅ React Router Navigation
+- ✅ Dynamic Rendering
+- ✅ Tailwind CSS Styling
+
+---
+
+## 📸 Project Preview
+
+### Home Page
+
+- Browse recipes
+- Search meals
+- Explore categories
+
+### Favorites Page
+
+- Save favorite recipes
+- Remove favorites
+
+### Recipe Details
+
+- View ingredients
+- Cooking instructions
+- Meal image and category
